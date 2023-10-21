@@ -1,14 +1,15 @@
-package dio.service;
+package dio.service.impl;
 
 import java.util.NoSuchElementException;
 
+import dio.service.UserService;
 import org.springframework.stereotype.Service;
 
 import dio.domain.model.User;
 import dio.domain.repository.UserRepository;
 
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
 
